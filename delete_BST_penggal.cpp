@@ -16,7 +16,7 @@ struct node *newNode(int value){
 void inorderTraversal(struct node *root){
     if (root != NULL){
         inorderTraversal(root->left);
-        printf("%d ", root->data);
+        printf("%i ", root->data);
         inorderTraversal(root->right);
     }
 }
@@ -69,7 +69,7 @@ int main(){
     root = delNode(root, key1);
     int key2 = 60;
     root = delNode(root, key2);
-    printf("\nInorder traversal setelah dihapus %d, %d, dan %d: ", key, key1, key2);
+    printf("\nInorder traversal setelah dihapus %i, %i, dan %i: ", key, key1, key2);
     printf("\n");
     inorderTraversal(root);
     printf("\n");
